@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment 2 - Stefano Herrera</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <h1>Assigment 2 - Stefano Herrera</h1>
+
+        <section class="card">
+            <h2>Reverse String<h2>
+            <form id="reverseForm" class="row">
+                <label for="reverseInput">Enter a message</label>
+                <input id="reverseInput" type="text" placeholder="Enter a string">
+                <button type="submit">Reverse String</button>
+            </form>
+            <p class="result"><strong>Reverse:</strong> <span id="reverseOut"></span></p>
+        </section>
+
+        <section class="card">
+            <h2>Palidrome Check Numbers<h2>
+            <p><small>Enter numbers separated by spaces or commas</small></p>
+            <form id="palForm" class="row">
+                <label for="palInput">Enter a serie of numbers</label>
+                <input id="palInput" type="text" placeholder="Enter a string of numbers" required>
+                <button type="submit">Check Palidrome</button>
+            </form>
+            <p class="result"><strong>Result:</strong> <span id="palOut"></span></p>
+        </section>
+
+        <section class="card">
+            <h2>Tip Calculator</h2>
+            <form id="tipForm" class="grid">
+              <div>
+                <label for="subtotal">Subtotal ($)</label>
+                <input id="subtotal" type="number" step="0.01" min="0" placeholder="0.00" required />
+              </div>
+              <div>
+                <label for="tipPercent">Tip (%)</label>
+                <input id="tipPercent" type="number" step="0.01" min="0" placeholder="15" value="15" required />
+              </div>
+              <button type="submit" class="full">Calculate Total</button>
+            </form>
+            <div class="totals">
+              <p><strong>Tip amount:</strong> <span id="tipAmount">$0.00</span></p>
+              <p><strong>Total:</strong> <span id="totalAmount">$0.00</span></p>
+            </div>
+          </section>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
